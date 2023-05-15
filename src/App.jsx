@@ -1,12 +1,12 @@
-import './App.css'
+import "./App.css";
+import { Chatbot } from "./Chatbot";
 
 function App() {
-
-  return (
-    <div className='App'>
-      
-    </div>
+  return( 
+  <div className="App">
+     <Chatbot/>
+  </div>
   )
 }
 
-export default App
+export default App;
