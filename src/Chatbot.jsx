@@ -1,5 +1,6 @@
 import { useState } from "react";
 import EcomSearch from '@ecomplus/search-engine'
+import { analyse } from "./analyse";
 
 export function Chatbot() {
   const [message, setMessage] = useState([
@@ -14,6 +15,7 @@ export function Chatbot() {
     let list = [...message, { message: userMessage, user: true }];
     console.log(list);
     if (list.length > 2) {
+         analyse(userMessage)
     } else {
       list = [
         ...list,
