@@ -57,8 +57,7 @@ button{
 }
 
 .chat-message{
-  max-height: 400px;
-  min-height: 400px;
+  max-height: 300px;
   overflow-y: auto;
   background-color: white;
 }
@@ -67,12 +66,12 @@ button{
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 10px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .user-message{
   justify-content: right;
+  margin-right: 10px;
 }
 
 .bot-message p,.user-message p{
@@ -80,4 +79,6 @@ button{
   padding: 8px 15px;
   border-radius: 50px;
   font-size: 14px;
+  text-transform: capitalize;
+  margin: 10px;
 }
