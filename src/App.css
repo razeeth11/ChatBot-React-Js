@@ -23,3 +23,61 @@ body{
   margin-top: 3%;
   border-radius: 5px;
 }
+
+input{
+  width: 80%;
+  border: none;
+  padding: 15px 15px 15px 25px;
+  font-size: 15px ;
+  background-color: rgb(234, 234, 234);
+  border-radius: 5px;
+}
+
+input:focus{
+  outline: none;
+}
+
+button{
+  width: 20%;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  background: linear-gradient(250deg, rgba(4, 0, 88, 0.578) 0%, rgba(0,212,255,1) 100%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.1s;
+  border-radius: 0px 0px 5px 0px;
+}
+
+.input{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.chat-message{
+  max-height: 400px;
+  min-height: 400px;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.bot-message,.user-message{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.user-message{
+  justify-content: right;
+}
+
+.bot-message p,.user-message p{
+  background-color: rgb(234, 234, 234);
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 14px;
+}
